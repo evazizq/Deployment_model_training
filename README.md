@@ -57,7 +57,7 @@ All dependencies are listed in `pyproject.toml`. Key libraries include:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/evazizq/Deployment_model_training.git
-   cd deployment_demo_model_training
+   cd Deployment_model_training
    ```
 
 2. **Install Dependencies**:
