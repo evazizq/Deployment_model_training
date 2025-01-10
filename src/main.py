@@ -13,11 +13,12 @@ def main():
 
 # Carga de datos
     data = load_data(file_path = "data/raw/heart_disease.csv")
+    data.columns = data.columns.str.replace(' ', '')
 
 # Preprocesamiento de datos
     processed_data, target = process_data(
-                                        df=data, columns_to_impute=['trestbps', 'chol', 'thalach', 'oldpeak'],  # columnas con posibles valores NaN
-                                        target_column='num'                                                     # valor objetivo en el dataset
+                                        df=data, columns_to_impute=['trestbps', 'chol', 'thalach', 'oldpeak'],
+                                        target_column='num'
                                         )
 
 # Conjuntos de entrenamiento y prueba
