@@ -16,5 +16,8 @@ RUN poetry config virtualenvs.create false && poetry install --no-root --no-inte
 # Copy the rest of the project files
 COPY . /app/
 
+# Copy the data directory
+COPY data /app/data
+
 # Command to run the inference script
 CMD ["poetry", "run", "python", "src/main.py"]
